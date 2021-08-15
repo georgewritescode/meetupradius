@@ -37,8 +37,9 @@ function App() {
     <div className="App h-screen w-full bg-gray-100 grid grid-cols-5">
       <div className="  col-span-5 md:col-span-1 p-2 pb-8">
         {(!userLoaded) ? 
-        <p className="bold">
-
+        <p className="font-semibold bg-white p-2 border-4 rounded border-red-500">
+          Access to your browser's location information is required. This data is not stored on servers, it is stored in your local browser. 
+          Click the location pin in your URL bar above to enable location information and refresh the webpage.
         </p>
          : null}
 
