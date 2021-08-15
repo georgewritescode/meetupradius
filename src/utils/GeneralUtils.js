@@ -2,11 +2,17 @@
 
 
 export const getRandomColor = () => {
-	var letters = '0123456789ABCDEF';
-	var color = '#';
-	for (var i = 0; i < 6; i++) {
-		color += letters[Math.floor(Math.random() * 16)];
-	}
-	return color;
+	const potentialColors = [
+		'#FF0000',
+		'#008000',
+		'#00FFFF',
+		'#0000FF',
+		'#FF00FF',
+		'#DE3163',
+		'#6495ED',
+		'#CCCCFF'
+	]
+
+	return potentialColors[Math.floor(Math.random() * potentialColors.length)]
 }
 
