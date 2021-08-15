@@ -59,7 +59,7 @@ function App() {
         <AdditionalNotesTextComponent />
       </div>
       <div id="mapDivContainer" className="col-span-5 md:col-span-4">
-        <MapContainer className="h-full w-full" center={defaultMapCenter} zoom={isMobile ? 12 : 13}>
+        <MapContainer className="h-full w-full" center={defaultMapCenter} zoom={isMobile ? 12 : 13} scrollWheelZoom={!isMobile}>
 
           <GoToUser setMapObj={(v) => setMapObj(v)} user={user} setUser={(v) => setUser(v)} />
 
