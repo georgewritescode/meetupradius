@@ -35,7 +35,7 @@ export const GoToUser = ({ setUser, user, setMapObj }) => {
 	useEffect(() => {
 	  map.locate()
 	  setMapObj(map)
-	}, [map])
+	}, [map, setMapObj])
 
 	return null
 }
