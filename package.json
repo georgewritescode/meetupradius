@@ -1,7 +1,7 @@
 {
   "name": "covidmeet",
   "version": "0.1.0",
-  "homepage": "http://georgewritescode.github.io/meetupradius",
+  "homepage": "https://meetupradius.com/",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.2.0",
