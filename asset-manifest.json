@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/meetupradius/static/css/main.75dc4544.chunk.css",
-    "main.js": "/meetupradius/static/js/main.0312c9f8.chunk.js",
-    "main.js.map": "/meetupradius/static/js/main.0312c9f8.chunk.js.map",
+    "main.css": "/meetupradius/static/css/main.c510debf.chunk.css",
+    "main.js": "/meetupradius/static/js/main.74daf5d4.chunk.js",
+    "main.js.map": "/meetupradius/static/js/main.74daf5d4.chunk.js.map",
     "runtime-main.js": "/meetupradius/static/js/runtime-main.d2180b70.js",
     "runtime-main.js.map": "/meetupradius/static/js/runtime-main.d2180b70.js.map",
     "static/js/2.30498b14.chunk.js": "/meetupradius/static/js/2.30498b14.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.61d6ff1e.chunk.js": "/meetupradius/static/js/3.61d6ff1e.chunk.js",
     "static/js/3.61d6ff1e.chunk.js.map": "/meetupradius/static/js/3.61d6ff1e.chunk.js.map",
     "index.html": "/meetupradius/index.html",
-    "static/css/main.75dc4544.chunk.css.map": "/meetupradius/static/css/main.75dc4544.chunk.css.map",
+    "static/css/main.c510debf.chunk.css.map": "/meetupradius/static/css/main.c510debf.chunk.css.map",
     "static/js/2.30498b14.chunk.js.LICENSE.txt": "/meetupradius/static/js/2.30498b14.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d2180b70.js",
     "static/js/2.30498b14.chunk.js",
-    "static/css/main.75dc4544.chunk.css",
-    "static/js/main.0312c9f8.chunk.js"
+    "static/css/main.c510debf.chunk.css",
+    "static/js/main.74daf5d4.chunk.js"
   ]
 }
