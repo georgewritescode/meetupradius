@@ -1,7 +1,7 @@
 
 
 export default () => <div className="text-sm w-full text-left mt-8 text-gray-500">
-<label className="mt-8 block font-bold mb-2">
+<label className="mt-8 block font-bold">
 			Note: 
 		</label>
 		<div className="w-full p-4">
