@@ -39,8 +39,8 @@ export default ({ user, setUser, allowedDistanceRadius }) => {
 	}
 
 	return <>
-		<label className="block text-gray-700 font-bold mb-2">
-			Share this URL with friends to see if and where
+		<label className="block text-gray-700 font-semibold text-sm mb-2 w-full text-center">
+			Share this URL with friends to share your meetup radius
 		</label>
 		<div className="w-full flex items-center">
 

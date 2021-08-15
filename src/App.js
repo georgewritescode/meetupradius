@@ -34,9 +34,12 @@ function App() {
   return (
     <div className="App h-screen w-full bg-gray-100 grid grid-cols-5">
       <div className="  col-span-5 md:col-span-1 p-2 pb-8">
-        <h1 className="mt-4 mb-8 bold">
-          COVID meet radius 
+        <h1 className="mt-4 mb-2 bold text-center w-full">
+          COVID Meetup Radius
         </h1>
+        <p className="mb-8 italic text-center w-full">
+          Find which friends are within your {allowedDistanceRadius/1000}Km radius and where you can go for outdoor exercise
+        </p>
 
         {userLoaded ?
           <UserShareComponent allowedDistanceRadius={allowedDistanceRadius} setUser={setUser} user={user} />
