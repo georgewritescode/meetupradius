@@ -45,3 +45,14 @@ code {
     @apply text-lg;
   }
 }
+
+#mapDivContainer {
+  height: 100vh;
+
+}
+
+  @media only screen and (max-device-width: 900px) {
+  #mapDivContainer {
+  height: 85vh;
+}
+}

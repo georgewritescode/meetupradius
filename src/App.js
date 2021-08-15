@@ -10,11 +10,13 @@ import { GoToUser } from './utils/MapUtils'
 import { getFromStorage, setStateAndStore } from './utils/DataStorage'
 import { defaultMapCenter } from './config'
 
+const isMobile = window.innerWidth <= 900
+
 function App() {
   const [allowedDistanceRadius, setAllowedDistanceRadiusState] = useState(getFromStorage('allowedDistanceRadius', 5000)) //radius of circle in metres
   const [user, setUserState] = useState(getFromStorage('user', null))
   const [friends, setFriendsState] = useState(getFromStorage('friends', []))
-  console.log("friends", friends)
+  const [mapObj, setMapObj] = useState(null)
 
   const setAllowedDistanceRadius = (value) => setStateAndStore('allowedDistanceRadius', value, setAllowedDistanceRadiusState)
   const setUser = (value) => setStateAndStore('user', value, setUserState)
@@ -34,6 +36,12 @@ function App() {
   return (
     <div className="App h-screen w-full bg-gray-100 grid grid-cols-5">
       <div className="  col-span-5 md:col-span-1 p-2 pb-8">
+        {(!userLoaded) ? 
+        <p className="bold">
+
+        </p>
+         : null}
+
         <h1 className="mt-4 mb-4 bold text-center w-full">
           COVID Meetup Radius
         </h1>
@@ -49,10 +57,10 @@ function App() {
 
         <AdditionalNotesTextComponent />
       </div>
-      <div className="h-screen  col-span-5 md:col-span-4">
-        <MapContainer className="h-full w-full" center={defaultMapCenter} zoom={13} >
+      <div id="mapDivContainer" className="col-span-5 md:col-span-4">
+        <MapContainer className="h-full w-full" center={defaultMapCenter} zoom={isMobile ? 12 : 13}>
 
-          <GoToUser user={user} setUser={(v) => setUser(v)} />
+          <GoToUser setMapObj={(v) => setMapObj(v)} user={user} setUser={(v) => setUser(v)} />
 
           {userLoaded ?
             <PersonLocation allowedDistanceRadius={allowedDistanceRadius} color={'orange'} user={true} location={user.location} name="Your location" />

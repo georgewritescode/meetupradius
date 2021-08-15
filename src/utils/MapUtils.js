@@ -2,7 +2,7 @@ import { useMapEvents } from 'react-leaflet';
 import shortid from 'shortid'
 import {useState, useEffect} from 'react'
 
-export const GoToUser = ({ setUser, user }) => {
+export const GoToUser = ({ setUser, user, setMapObj }) => {
 	const [hasCentered, setHasCentered] = useState(false)
 	const map = useMapEvents({
 		click: () => {
@@ -34,6 +34,7 @@ export const GoToUser = ({ setUser, user }) => {
 
 	useEffect(() => {
 	  map.locate()
+	  setMapObj(map)
 	}, [map])
 
 	return null
