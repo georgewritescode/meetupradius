@@ -1,6 +1,7 @@
 {
   "name": "covidmeet",
   "version": "0.1.0",
+  "homepage": "http://georgewritescode.github.io/meetupradius",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.2.0",
@@ -18,7 +19,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
