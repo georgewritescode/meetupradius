@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/meetupradius/static/css/main.85604f70.chunk.css",
-    "main.js": "/meetupradius/static/js/main.2cabc025.chunk.js",
-    "main.js.map": "/meetupradius/static/js/main.2cabc025.chunk.js.map",
+    "main.js": "/meetupradius/static/js/main.e225ce7b.chunk.js",
+    "main.js.map": "/meetupradius/static/js/main.e225ce7b.chunk.js.map",
     "runtime-main.js": "/meetupradius/static/js/runtime-main.f2e88528.js",
     "runtime-main.js.map": "/meetupradius/static/js/runtime-main.f2e88528.js.map",
     "static/js/2.7d320e15.chunk.js": "/meetupradius/static/js/2.7d320e15.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f2e88528.js",
     "static/js/2.7d320e15.chunk.js",
     "static/css/main.85604f70.chunk.css",
-    "static/js/main.2cabc025.chunk.js"
+    "static/js/main.e225ce7b.chunk.js"
   ]
 }
