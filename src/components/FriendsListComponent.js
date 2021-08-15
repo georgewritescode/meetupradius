@@ -7,9 +7,11 @@ const FriendListItem = ({ friend, removeFriend }) => {
 	</li>
 }
 export default ({ friends, removeFriend }) => {
-	if (friends.length === 0) {
-		return <p className="mt-8">Share the URL above to add your friends to the map. You will be able to see who is within your radius for 1 on 1 outdoor exercise</p>
+
+	if(friends.length === 0) {
+		return <div />
 	}
+
 	return (<div className="text-left">
 		<label className="mt-8 block text-gray-700 font-bold mb-2 text-sm">
 			Friends
