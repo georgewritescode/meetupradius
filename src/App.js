@@ -47,7 +47,7 @@ function App() {
           COVID Meetup Radius
         </h1>
         <p className="mb-8 italic text-center w-full text-sm">
-          Find which friends are within your {allowedDistanceRadius/1000}Km radius and where you can go for one on one outdoor exercise
+          Find friends within your {allowedDistanceRadius / 1000}km radius and where you can go for one on one outdoor exercise
         </p>
 
         {userLoaded ?
