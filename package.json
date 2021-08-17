@@ -1,7 +1,7 @@
 {
   "name": "covidmeet",
   "version": "0.1.0",
-  "homepage": "https://meetupradius.com/",
+  "homepage": "https://meetupradius.com",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.2.0",

@@ -6,7 +6,9 @@ export default ({ user, setUser, allowedDistanceRadius }) => {
 	const [copied, setCopied] = useState(false)
 	const [nameValue, setNameValue] = useState("")
 
-	const shareURL = () => `${appURL}?name=${user.name}&lat=${user.location.lat}&lng=${user.location.lng}&id=${user.id}`
+	const usersNameEncodedForURL = () => encodeURIComponent(user.name)
+
+	const shareURL = () => `${appURL}?name=${usersNameEncodedForURL()}&lat=${user.location.lat}&lng=${user.location.lng}&id=${user.id}`
 
 	if (!user.name) {
 		return <div className="text-left">

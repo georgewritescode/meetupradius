@@ -1,19 +1,19 @@
 import { useMapEvents } from 'react-leaflet';
 import shortid from 'shortid'
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 export const GoToUser = ({ setUser, user, setMapObj }) => {
 	const [hasCentered, setHasCentered] = useState(false)
 	const map = useMapEvents({
 		click: () => {
-				map.locate()
+			map.locate()
 		},
 		locationfound: async (e) => {
 			if (!hasCentered) {
 				map.panTo(e.latlng, map.getZoom())
 				setHasCentered(true)
 			}
-			
+
 			if (user?.location) {
 				// User already set
 				return;
@@ -33,8 +33,9 @@ export const GoToUser = ({ setUser, user, setMapObj }) => {
 
 
 	useEffect(() => {
-	  map.locate()
-	  setMapObj(map)
+		setTimeout(() => { map.locate() }, 1000);
+
+		setMapObj(map)
 	}, [map, setMapObj])
 
 	return null
