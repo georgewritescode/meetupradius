@@ -23,8 +23,9 @@ function App() {
   const setFriends = (value) => setStateAndStore('friends', value, setFriendsState)
 
   useEffect(() => {
-    addFriendFromURL({ user: user, friends: friends, setFriends: setFriends})
-  }, [user, friends])
+    const addFriendFromURLAtPageLoad = () => addFriendFromURL({ user: user, friends: friends, setFriends: setFriends })
+    addFriendFromURLAtPageLoad()
+  }, [])
 
   console.log("user", user)
   console.log("friends", friends)
